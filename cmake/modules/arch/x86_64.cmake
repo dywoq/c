@@ -1,0 +1,1 @@
+set(ARCH_DIR "${CMAKE_SOURCE_DIR}/src/arch/x86_64")
