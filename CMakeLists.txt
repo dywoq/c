@@ -9,3 +9,4 @@ file(GLOB_RECURSE OS_SOURCES ${OS_DIR}/*.c ${OS_DIR}/**/*.c)
 file(GLOB_RECURSE LIB_SOURCES src/lib/*.c src/lib/**/.c)
 
 add_library(${PROJECT_NAME} STATIC ${OS_SOURCES} ${LIB_SOURCES} ${ARCH_SOURCES})
+target_include_directories(${PROJECT_NAME} PUBLIC include/)
